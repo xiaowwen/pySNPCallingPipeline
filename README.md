@@ -6,7 +6,7 @@ Descriptions of the various options in the Java code is given at https://github.
 An example configuration file is included in this directory.
 
 ## USAGE
-usage: pySNPCallingPipeline.py [-h] -c CONF_FILE [--aln_only] [--no_aln]
+# usage: pySNPCallingPipeline.py [-h] -c CONF_FILE [--aln_only] [--no_aln]
                                [--local] [--submit] [--subset SUBSET]
                                [--def_run]
 
