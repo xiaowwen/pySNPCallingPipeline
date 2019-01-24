@@ -1,11 +1,11 @@
-                                        ABOUT
+## ABOUT
 
 Python implementation of Java SNP calling pipeline (https://github.com/DSGlab/SNPCallingPipeline).
 Usage is descriped below. For consistency the configuration file is exactly as described in the Java code.
 Descriptions of the various options in the Java code is given at https://github.com/DSGlab/SNPCallingPipeline.
 An example configuration file is included in this directory.
 
-                                       USAGE
+## USAGE
 usage: pySNPCallingPipeline.py [-h] -c CONF_FILE [--aln_only] [--no_aln]
                                [--local] [--submit] [--subset SUBSET]
                                [--def_run]
