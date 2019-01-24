@@ -6,34 +6,34 @@ Descriptions of the various options in the Java code is given at https://github.
 An example configuration file is included in this directory.
 
 ## USAGE
-# usage: pySNPCallingPipeline.py [-h] -c CONF_FILE [--aln_only] [--no_aln]
+usage: pySNPCallingPipeline.py [-h] -c CONF_FILE [--aln_only] [--no_aln]
                                [--local] [--submit] [--subset SUBSET]
                                [--def_run]
 
 Run pySNPCallingPipeline
 
 optional arguments:
-  -h, --help            show this help message and exit
+  -h, --help::           show this help message and exit
   
-  -c                    CONF_FILE, --conf CONF_FILE
+  -c ::                    CONF_FILE, --conf CONF_FILE
                         A configuration file is required to run
                         pySNPCallingPipeline.
                         
-  --aln_only            Alignment only, default is FALSE.
+  --aln_only ::           Alignment only, default is FALSE.
   
-  --no_aln              Run all analysis using pre-run alignments, default is
+  --no_aln  ::            Run all analysis using pre-run alignments, default is
                         FALSE.
                         
-  --local               Is this a LOCAL run or should SLURM files be created?
+  --local  ::             Is this a LOCAL run or should SLURM files be created?
                         Default is True.
                         
-  --submit              If running a supercomputing cluster, should only slurm
+  --submit  ::            If running a supercomputing cluster, should only slurm
                         files be created or should the jobs be submitted as
                         well.
                         
-  --subset SUBSET       Provide a comma seperated list of a subset of
+  --subset SUBSET ::      Provide a comma seperated list of a subset of
                         "alignment, getHQSNPs, intraClonalSNPs, checkSNPs,
                         filterSNPs"
                         
-  --def_run             Default: run entire calculation locally.
+  --def_run    ::         Default: run entire calculation locally.
 
