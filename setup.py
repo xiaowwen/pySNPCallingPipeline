@@ -11,6 +11,6 @@ setup(
     license='MIT',
     description='Python implementation of Java SNP calling pipeline (https://github.com/DSGlab/SNPCallingPipeline/)',
     # We will also need a readme eventually (there will be a warning)
-    long_description=open('README.txt').read(),
+    long_description=open('README.md').read(),
 )
 
