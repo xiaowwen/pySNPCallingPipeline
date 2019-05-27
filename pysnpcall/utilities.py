@@ -15,7 +15,7 @@ def isolate_folders(seq_fpath):
     for fastq in files:
         fname = fastq.split('/')[-1]
         if fname.endswith('fq.gz'):
-            prefix = fname[:-9]
+            prefix = fname[:-6]
         elif fname.endswith('fq'):
             prefix = fname[:-3]
         else:
