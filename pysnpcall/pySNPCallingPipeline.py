@@ -132,7 +132,7 @@ if DEF_RUN:
 # USING PRE-ALIGNED data: getHQSNPs --> checkSNPs --> FilterSNPs --> write VCF
 if NO_ALN:
 
-    print('Carrying out SNP analysis on previously aligned sequences. Checking VCF files....')
+    print('Carrying out SNP analysis on previously aligned sequences. Checking whether VCF files are present.')
 
     # Gather some information from the configuration file
     config_reader = read_config(CONF_FILE)
