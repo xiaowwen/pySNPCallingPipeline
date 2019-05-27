@@ -24,7 +24,7 @@ parser.add_argument('--aln_only', action='store_true', help='Alignment only, def
 parser.add_argument('--no_aln', action='store_true', help='Run all analysis using pre-run alignments, default is FALSE.')
 
 # Run locally or on a supercomputing cluster
-parser.add_argument('--local', action='store_true',  help='Is this a LOCAL run or should SLURM files be created? Default is True.')
+parser.add_argument('--local', action='store_true',  default=True, help='Is this a LOCAL run or should SLURM files be created? Default is True.')
 
 # If running a supercomputing cluster, should only slurm files be created or should the jobs be submitted  as well
 parser.add_argument('--submit', action='store_true', default=False, help='If running a supercomputing cluster, should only slurm files be created or should the jobs be submitted  as well.')
@@ -33,7 +33,7 @@ parser.add_argument('--submit', action='store_true', default=False, help='If run
 parser.add_argument('--subset', dest='SUBSET', default=None,  help='Provide a comma seperated list of a subset of "alignment, getHQSNPs, intraClonalSNPs, checkSNPs, filterSNPs"')
 
 # Default: run all analysis locally
-parser.add_argument('--def_run', action='store_true',  help='Default: run entire calculation locally.')
+parser.add_argument('--def_run', action='store_true', default=True, help='Default: run entire calculation locally.')
 
 args   = parser.parse_args()
 
