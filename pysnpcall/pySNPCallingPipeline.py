@@ -64,7 +64,7 @@ print("=========================================================================
 # Function to check if alignment files are present
 
 def check_alignments(isolates):
-
+    checkAlignmentFiles = False
     # 1. Check that all alignment files are in the appropriate folders
     for isolate in isolates:
         # Handles for VCF files for the three alignment methods
